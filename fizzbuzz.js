@@ -1,3 +1,8 @@
+function imprimir (valor)
+{
+  console.log(valor);
+}
+
 function fizzbuzz () {
   for(i = 0; i < 100; i++) 
   {
@@ -20,4 +25,5 @@ function fizzbuzz () {
   }
 }
 
-fizzbuzz()
+// fizzbuzz()
+imprimir('Fizz');
