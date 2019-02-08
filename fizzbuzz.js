@@ -1,6 +1,5 @@
-function imprimir (valor)
-{
-  console.log(valor);
+var imprimir = function(valor){
+  return valor;
 }
 
 function fizzbuzz () {
@@ -23,7 +22,11 @@ function fizzbuzz () {
           else
             console.log(i);
   }
+  return 0;
 }
 
-// fizzbuzz()
-imprimir('Fizz');
+module.exports = {
+  imprimir: imprimir,
+  fizzbuzz: fizzbuzz
+}
+
