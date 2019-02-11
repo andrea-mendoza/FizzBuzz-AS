@@ -13,4 +13,8 @@ describe('FizzBuzz', function(){
     it('Cuando el numero es 3 deberia devolver Fizz',function(){
         expect(fb.fizzbuzz()[3]).equal("Fizz");
     });
+
+    it('Cuando el numero es 5 deberia devolver Buzz',function(){
+        expect(fb.fizzbuzz()[5]).equal("Buzz");
+    });
 });
