@@ -4,8 +4,8 @@ var should = require('chai').should();
 var fb = require("../fizzbuzz.js");
 
 
-describe('lo que quiero', function(){
-    it('deberia pasar',function(){
-        expect(true).equal(true);
+describe('FizzBuzz', function(){
+    it('Cuando el numero es 1 deberia devolver 1',function(){
+        expect(fb.fizzbuzz()[1]).equal("1");
     });
 });
