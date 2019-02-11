@@ -17,4 +17,8 @@ describe('FizzBuzz', function(){
     it('Cuando el numero es 5 deberia devolver Buzz',function(){
         expect(fb.fizzbuzz()[5]).equal("Buzz");
     });
+
+    it('Cuando el numero es 15 deberia devolver FizzBuzz',function(){
+        expect(fb.fizzbuzz()[15]).equal("FizzBuzz");
+    });
 });
