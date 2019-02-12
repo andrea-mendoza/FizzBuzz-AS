@@ -19,6 +19,7 @@ function fizzbuzz(){
   var auxFizzBuzz = [];
   for(cont = 0; cont<100;cont++){
     auxFizzBuzz[cont] = generarValor(cont);
+    console.log(auxFizzBuzz[cont]);
   }
   return auxFizzBuzz;
 }
