@@ -1,31 +1,35 @@
-function generarValor(numero){
-  var valor;
-  if(numero % 15 === 0){
-    valor = "FizzBuzz";
-  }
-  else if(numero % 3 == 0){
-    valor = "Fizz";
-  }
-  else if(numero % 5 === 0){
-    valor = "Buzz";
-  }
-  else{
-    valor = numero.toString();
-  }
-  return valor;
+function esMultiploDe(multiplo, numero)
+{
+  return numero%multiplo === 0;
 }
 
-function fizzbuzz(){
-  var auxFizzBuzz = [];
-  for(cont = 0; cont<100;cont++){
-    auxFizzBuzz[cont] = generarValor(cont);
-    console.log(auxFizzBuzz[cont]);
+function generarFizzBuzzDe(numero){
+  let valorGenerado;
+  if(esMultiploDe(15,numero)){
+    valorGenerado = "FizzBuzz";
   }
-  return auxFizzBuzz;
+  else if(esMultiploDe(3,numero)){
+    valorGenerado = "Fizz";
+  }
+  else if(esMultiploDe(5,numero)){
+    valorGenerado = "Buzz";
+  }
+  else{
+    valorGenerado = numero.toString();
+  }
+  return valorGenerado;
+}
+
+function generarCadenaFizzBuzz(){ 
+  var cadenaFizzBuzz = [];
+  for(contador = 0; contador<100;contador++){
+    cadenaFizzBuzz[contador] = generarFizzBuzzDe(contador);
+  }
+  return cadenaFizzBuzz;
 }
 
 module.exports = {
-  fizzbuzz: fizzbuzz,
-  generarValor: generarValor
+  generarCadenaFizzBuzz: generarCadenaFizzBuzz,
+  generarFizzBuzzDe: generarFizzBuzzDe
 }
 
